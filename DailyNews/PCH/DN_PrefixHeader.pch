@@ -1,0 +1,35 @@
+//
+//  DN_PrefixHeader.pch
+//  DailyNews
+//
+//  Created by devfalme on 2019/1/5.
+//  Copyright © 2019 devfalme. All rights reserved.
+//
+
+#ifndef DN_PrefixHeader_pch
+#define DN_PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import <Router_t/Router_t.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <QMUIKit/QMUIKit.h>
+#import <MJRefresh/MJRefresh.h>
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
+#import "DN_AppDefaults.h"
+
+#import "UIViewController+DN_View.h"
+#import "UIView+DN_View.h"
+
+#ifdef DEBUG
+#define NSLog(...)      NSLog(__VA_ARGS__)
+#define debugLog(...)   NSLog(__VA_ARGS__)
+#define debugMethod()   NSLog(@"%s", __func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#define NSLog(...){}
+#endif
+#endif /* DN_PrefixHeader_pch */

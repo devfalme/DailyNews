@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="DN_NewsYearsHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlA-5N-RQp">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YearsTitle" translatesAutoresizingMaskIntoConstraints="NO" id="MXa-wO-8Kw">
+                            <rect key="frame" x="20" y="10" width="280" height="130.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MXa-wO-8Kw" secondAttribute="height" multiplier="15:7" id="OFt-aL-emU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年度資訊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKH-1X-PW9">
+                            <rect key="frame" x="25" y="15" width="103.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best of 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvw-7Q-4fX">
+                            <rect key="frame" x="25" y="34.5" width="72" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KKH-1X-PW9" firstAttribute="leading" secondItem="VlA-5N-RQp" secondAttribute="leading" constant="25" id="1Y6-D5-bxs"/>
+                        <constraint firstItem="MXa-wO-8Kw" firstAttribute="leading" secondItem="VlA-5N-RQp" secondAttribute="leading" constant="20" id="7JB-TJ-oQS"/>
+                        <constraint firstAttribute="trailing" secondItem="MXa-wO-8Kw" secondAttribute="trailing" constant="20" id="DSn-C2-rNZ"/>
+                        <constraint firstItem="bvw-7Q-4fX" firstAttribute="top" secondItem="KKH-1X-PW9" secondAttribute="bottom" id="Dka-3B-npg"/>
+                        <constraint firstItem="bvw-7Q-4fX" firstAttribute="leading" secondItem="VlA-5N-RQp" secondAttribute="leading" constant="25" id="VBO-j9-waF"/>
+                        <constraint firstItem="MXa-wO-8Kw" firstAttribute="top" secondItem="VlA-5N-RQp" secondAttribute="top" constant="10" id="Zvb-ki-jSC"/>
+                        <constraint firstItem="KKH-1X-PW9" firstAttribute="top" secondItem="VlA-5N-RQp" secondAttribute="top" constant="15" id="uqh-e5-F1L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Gg-ye-v9C" firstAttribute="bottom" secondItem="VlA-5N-RQp" secondAttribute="bottom" id="9Bk-6z-X67"/>
+                <constraint firstItem="VlA-5N-RQp" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" id="GjW-dV-PAS"/>
+                <constraint firstItem="9Gg-ye-v9C" firstAttribute="trailing" secondItem="VlA-5N-RQp" secondAttribute="trailing" id="gGx-wj-50T"/>
+                <constraint firstItem="VlA-5N-RQp" firstAttribute="top" secondItem="9Gg-ye-v9C" secondAttribute="top" id="hhx-A8-NIX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <connections>
+                <outlet property="subTitleLabel" destination="bvw-7Q-4fX" id="QzG-Jy-R8W"/>
+                <outlet property="titleLabel" destination="KKH-1X-PW9" id="YvL-hy-MFg"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="22.03898050974513"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="YearsTitle" width="335" height="157"/>
+    </resources>
+</document>
